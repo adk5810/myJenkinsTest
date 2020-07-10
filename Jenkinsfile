@@ -7,7 +7,7 @@ pipeline {
 		stage ('build') {
 			steps {
 			    echo "build"
-			    sh mvn compile
+			    sh 'mvn install'
 			}
 		}
 		stage ('test: integration-&-quality') {
