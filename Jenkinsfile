@@ -1,5 +1,6 @@
 pipeline {
 	agent any
+	stages {
 		stage ('build') {
 			steps {
 			    echo "build"
@@ -30,4 +31,5 @@ pipeline {
 			    echo "deploy:prod"
 			}
 		}
+}
 }
