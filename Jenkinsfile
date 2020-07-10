@@ -7,6 +7,7 @@ pipeline {
 		stage ('build') {
 			steps {
 			    echo "build"
+			    sh mvn compile
 			}
 		}
 		stage ('test: integration-&-quality') {
