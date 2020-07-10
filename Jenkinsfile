@@ -30,5 +30,4 @@ pipeline {
 			    echo "deploy:prod"
 			}
 		}
-	}
 }
